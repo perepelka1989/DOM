@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+}
+
+.title__products{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+color: #222222;
+margin:40px 0 6px 0;
+}
+
+.subtitle__products{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #9F9F9F;
+margin-bottom: 48px;
+}
+
+.products {
+display: grid;
+grid-template-columns: repeat(3, 360px);
+justify-content: center;
+gap: 30px;
+}
+
+.cart-items {
+    padding: 48px 230px;
+    max-width: 1330px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product__content{
+    width:360px;
+    height:587px;
+}
+
+.product__container {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.img__container{
+    width: 360px;
+    height: 420px;
+    background: #F7E4E2;
+    display: flex;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.img__container:hover {
+    background: #3A3838;
+    cursor: pointer;
+}
+
+.product__img{
+max-width: 360px;
+max-height: 420px;
+transition: all .3s;
+}
+
+.product__img:hover {
+    /* background: #000; */
+    /* z-index: 100;  */
+    opacity: .5;
+    /* filter: brightness(40%); */
+}
+
+.product__desc{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 24px 16px;
+gap: 16px;
+width: 328px;
+background-color:#F8F8F8;
+}
+
+.product__name{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+color: #000000;
+}
+
+.product__about{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: #5D5D5D;
+width: 314px;
+}
+
+.product__price_label{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #F16D7F;
+}
+
+
+.product__button {
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #F26376;
+border: 1px solid #FF6A6A;
+margin: 63px 0 109px 0;
+padding: 14.5px 38.5px;
+background-color: #fff;
+}
+
+.add-to-card {
+    /* display: none; */
+    position: absolute;
+    border: 1px solid #FFFFFF;
+    padding: 13px 10px;
+    color: #FFFFFF;
+    margin: 188.5px 110.5px;
+    cursor: pointer;
+    &_text {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+.basket_product__box {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.basket_product {
+    position: relative;
+}
+
+.basket_btn__del {
+    position: absolute;
+    top: 28px;
+    right: 22px;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    border: none;
+    background: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./img/cross.svg);
+    cursor: pointer;
+}
+
+.basket_product__img {
+    width: 262px;
+    height: 306px;
+    background: #F7E4E2;
+    display: flex;
+    justify-content: center;
+}
+
+.basket_product__desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757
+}
+
+.basket_product__name {
+    margin-bottom: 42px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+}
+
+.basket_product__price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #EF5B70;
+
+}
+
+.basket_input__quantity {
+    width: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #656565;
+    text-align: center;
+    border: 1px solid #EAEAEA
+}
+
+.basket_product__qty {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+
+}
+
+.basket_product__desc {
+    padding: 22px 100px 62px 30px;
+}
+
+.basket_product__content {
+    display: flex;
+    width: 650px;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+
+.basket_header {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 96px;
+    text-align: center;
+}
