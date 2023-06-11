@@ -183,7 +183,7 @@ background-color: #fff;
     background: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(./img/cross.svg);
+    background-image: url(/seminar12/dz/img/cross.svg);
     cursor: pointer;
 }
 
